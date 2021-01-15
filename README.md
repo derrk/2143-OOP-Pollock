@@ -9,4 +9,4 @@ Object Oriented Programming Class
 #### Image:
 ![Derrik](https://ca.slack-edge.com/TBMBG710S-U01DBT07RJ9-8a8c9a79ea0f-512)
 #### Avatar:
-![Avatar]
+![Avatar](https://github.com/account)
