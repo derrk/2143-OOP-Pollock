@@ -7,6 +7,6 @@ Object Oriented Programming Class
 #### Email: derrik.pollock@gmail.com
 #### Website: https://fiendswithdream.com
 #### Image:
-![Albert Einstein](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein.png)
+![Derrik]https://ca.slack-edge.com/TBMBG710S-U01DBT07RJ9-8a8c9a79ea0f-512
 #### Avatar:
-![Avatar](https://cs.msutexas.edu/~griffin/zcloud/zcloud-files/einstein_avatar.png)
+![Avatar]
