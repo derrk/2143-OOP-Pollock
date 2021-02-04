@@ -5,4 +5,4 @@ This is the "hello world" of SFML game programming.
 
 ### Files
 - [sfml_test.cpp](sfml_test.cpp) 
-- [screenshotsfml.png](<imgsrc> "screenshotsfml.png")
+- [screenshotsfml.png](<imgsrc> "desktop/screenshotsfml.png")
