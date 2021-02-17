@@ -1,3 +1,5 @@
+#### Assignment 7 - Designing my Game ## (let's call it Sector Surfer)
+
 ### Game
 
 <img src="https://github.com/derrk/2143-OOP-Pollock/blob/main/Assignments/A07/imagesa07/game.png" width="200">
