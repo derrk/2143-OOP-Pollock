@@ -1,4 +1,4 @@
-#### Assignment 7 - Designing my Game ## (let's call it Sector Surfer)
+#### Assignment 7 - Designing my Game  (let's call it Sector Surfer)
 
 ### Game
 
