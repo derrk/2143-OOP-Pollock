@@ -51,7 +51,7 @@ void GameState::HandleInput()
 		{
 			if (GameStates::eGameOver != _gameState)
 			{
-				_gameState = GameStates::ePlaying;
+			_gameState = GameStates::ePlaying;
 			doge->Tap( );
 			}
 		}
@@ -62,7 +62,6 @@ void GameState::Update(float dt)
 {
 	if (GameStates::eGameOver != _gameState)
 	{
-	debris->MoveDebris( dt );
 	land->moveLand(dt);
 	}
 	if (GameStates::ePlaying == _gameState)
@@ -75,24 +74,25 @@ void GameState::Update(float dt)
 		debris->spawnInvisibleDebris();
 		debris->spawnBottomDebris();
 		debris->spawnTopDebris();
-		debris->spawnInvisibleDebris();
+		debris->spawnScoringDebris();
 		
 		clock.restart();
 	}
 	doge ->update(dt);
+	
 		
 		std::vector<sf::Sprite> landSprites = land->GetSprites();
 		for (int i = 0; i < landSprites.size(); i++)
 		{
-		if ( collision.CheckSpriteCollision(doge->GetSprite(),landSprites.at(i)))
-		{
-			_gameState = GameStates::eGameOver;
-		}
+			if ( collision.CheckSpriteCollision(doge->GetSprite(),landSprites.at(i)))
+			{
+				_gameState = GameStates::eGameOver;
+			}
 		}
 		
 		std::vector<sf::Sprite> debrisSprites = debris->GetSprites();
 		for (int i = 0; i < debrisSprites.size(); i++)
-		{
+		{	// if collision is detected set to game over
 		if ( collision.CheckSpriteCollision(doge->GetSprite(), 0.7f ,debrisSprites.at(i), 1.0f))
 		{
 			_gameState = GameStates::eGameOver;
@@ -101,6 +101,7 @@ void GameState::Update(float dt)
 		std::vector<sf::Sprite> &scoringSprites = debris->GetScoringSprites();
 		for (int i = 0; i < scoringSprites.size(); i++)
 		{
+			
 		if ( collision.CheckSpriteCollision(doge->GetSprite(), 0.7f ,scoringSprites.at(i), 1.0f))
 		{
 			_score++;
@@ -124,3 +125,5 @@ void GameState::Draw(float dt)
 	_data->window.display( );
 }
 }
+
+
