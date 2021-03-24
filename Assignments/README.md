@@ -7,5 +7,7 @@
 | [05](./A05) | [A05](./A05) | [defintions commonly used in OOP     ](./A05)   |
 | [06](./A06) | [A06](./A06) | [Graphics Library for Cool Programs  ](./A06)   |
 | [07](./A07) | [A07](./A07) | [Designing My Game  ](./A07)   |
+| [08](./A08) | [A08](./A08) | [Copy Constructor  ](./A08)   |
+| [09](./P01) | [P01](./P01) | [My Game  ](./P01)   |
 
 
