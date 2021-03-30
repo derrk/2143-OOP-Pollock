@@ -40,7 +40,7 @@ void Debris::spawnScoringDebris()
 	sprite.setPosition( _data->window.getSize().x, 0);
 	
 	// store debris in vector
-	debrisSprites.push_back( sprite );
+	scoringDebris.push_back( sprite );
 }
 
 void Debris::MoveDebris( float dt )
@@ -62,12 +62,12 @@ void Debris::MoveDebris( float dt )
 	}
 	std::cout << debrisSprites.size() << std::endl;
 	
-	for (unsigned int i = 0; i < debrisSprites.size(); i++)
+	for (unsigned int i = 0; i < scoringDebris.size(); i++)
 	{
 		// if statement to delete debris once it is off screen
 		if (scoringDebris.at( i ).getPosition().x < 0 - scoringDebris.at(i).getGlobalBounds().width )
 		{	// clear the debris so memory is not getting full
-			scoringDebris.erase( debrisSprites.begin() + i);
+			debrisSprites.erase( debrisSprites.begin() + i);
 		}
 		else	// move the debris as normal
 		{
@@ -100,3 +100,4 @@ const std::vector<sf::Sprite> &Debris::GetSprites( ) const
 		return scoringDebris;
 	}
 }
+
